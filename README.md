@@ -11,8 +11,8 @@ The user can search for diseases associated with a given miRNA name, or miRNAs a
 - **Input:**  a miRNA name (**mirna**) or a disease name (**disease**) ( Optional: **mirna_score**, **gene_score** )
 - **Output**: A table containing filtered miRNA, genes and disease.
   
-***Example:***
-`python mian_script.py -m hsa-miR-101-3p -ms 90 -gs 0.9`
+**Example:**
+`python mian_script.py -m hsa-miR-101-3p -ms 90 -gs 0.90`
 
 ```plaintext
 The file is loaded: "miRNA_disease_linked.csv".
@@ -30,7 +30,7 @@ Here are the associated [Diseases] and [Genes] to the input [miRNA]: "hsa-miR-10
 |  939 | hsa-miR-101-3p | endocrine-cerebroosteodysplasia            | CILK1        |
 |  940 | hsa-miR-101-3p | loeys-dietz syndrome                       | TGFBR1       |
 ```
-
+**Example:**
 `python mian_script.py -d "alzheimer's disease" -ms 99 -gs 0.90`
 
 ```plaintext
@@ -57,7 +57,7 @@ The user can **browse** the database for matches to given **query**, which will 
 - **Input:** The browse type (**"mirna"** or **"disease"**) and the query ( **partial or full miRNA/disease name** )
 - **Output:** A list containing all the matched miRNA or disease results.
   
-***Example:***
+**Example:**
 `python mian_script.py -b mirna -q hsa-miR-101`
 
 ```plaintext
@@ -71,7 +71,7 @@ Here are 3 miRNA names that match your query:
 
 ['hsa-miR-101-2-5p' 'hsa-miR-101-3p' 'hsa-miR-101-5p']
 ```
-
+**Example:**
 `python mian_script.py -b disease -q "type III"`
 
 ```plaintext
